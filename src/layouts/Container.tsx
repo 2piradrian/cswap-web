@@ -14,12 +14,10 @@ function Container({ children, background, height }: Props) {
 		height: height ? height : "auto",
 	};
 
-	console.log(containerStyle);
-
 	return (
-		<div className="container" style={containerStyle}>
+		<section className="container" style={containerStyle}>
 			<div className="content">{children}</div>
-		</div>
+		</section>
 	);
 }
 

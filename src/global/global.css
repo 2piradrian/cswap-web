@@ -20,6 +20,10 @@ html * {
 	font-family: "Poppins", sans-serif;
 }
 
+#root {
+	width: 100%;
+}
+
 .container {
 	height: auto;
 	width: 100%;
