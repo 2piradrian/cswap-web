@@ -25,13 +25,20 @@
 	text-align: center;
 }
 
+.button {
+	height: 50px;
+}
+
 @media (min-width: 600px) {
 	.title {
 		font-size: 44px;
 	}
+	.subtitle {
+		font-size: 18px;
+	}
 }
 @media (min-width: 800px) {
 	.title {
-		font-size: 46px;
+		font-size: 48px;
 	}
 }
