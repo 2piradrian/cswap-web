@@ -4,15 +4,17 @@ import "../global/global.css";
 type Props = {
 	children: React.ReactNode;
 	background?: string;
-	heigth?: string;
+	height?: string;
 };
 
-function Container({ children, background, heigth }: Props) {
+function Container({ children, background, height }: Props) {
 	// Custom styles in container
 	const containerStyle = {
 		backgroundColor: background ? background : "var(--background)",
-		heigth: heigth ? heigth : "auto",
+		height: height ? height : "auto",
 	};
+
+	console.log(containerStyle);
 
 	return (
 		<div className="container" style={containerStyle}>
