@@ -43,3 +43,19 @@
 .hire > svg {
 	font-size: 18px;
 }
+
+@media (min-width: 700px) {
+	.box {
+		height: 200px;
+	}
+	.title {
+		font-size: 32px;
+	}
+	.description {
+		font-size: 18px;
+	}
+	.hire > p,
+	.hire > svg {
+		font-size: 22px;
+	}
+}

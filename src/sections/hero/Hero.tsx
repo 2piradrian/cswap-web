@@ -12,7 +12,7 @@ function Hero() {
 				<h2 className={style.subtitle}>Centrados en el usuario y el negocio.</h2>
 				{/* Contact button */}
 				<InvisibleAnchor>
-					<MainButton text="Contáctame" styles={style.button} />
+					<MainButton text="Contáctanos" styles={style.button} />
 				</InvisibleAnchor>
 			</div>
 		</Container>

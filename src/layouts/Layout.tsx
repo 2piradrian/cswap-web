@@ -1,11 +1,17 @@
 import React from "react";
+import Header from "../sections/header/Header";
 
 type Props = {
 	children: React.ReactNode;
 };
 
 function Layout({ children }: Props) {
-	return <main>{children}</main>;
+	return (
+		<div>
+			<Header />
+			<main>{children}</main>;
+		</div>
+	);
 }
 
 export default Layout;
