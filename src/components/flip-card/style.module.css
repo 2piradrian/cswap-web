@@ -1,0 +1,90 @@
+@import url(../../global/var.css);
+
+.card {
+	height: 300px;
+	width: 300px;
+	border-radius: 18px;
+	background-color: var(--contrast);
+	color: var(--background);
+	text-align: center;
+	position: relative;
+	perspective: 600px;
+	float: left;
+	transition: transform 1s;
+	transform-style: preserve-3d;
+}
+
+.card:hover {
+	transform: rotateY(180deg);
+}
+
+.front {
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	transition: all 0.8s ease;
+	backface-visibility: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	background-color: var(--contrast);
+	border-radius: 18px;
+}
+
+.front:hover {
+	transform: rotateY(180deg);
+	transition: transform 0.5s;
+	display: none;
+	visibility: hidden;
+}
+
+.back {
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	transition: all 0.8s ease;
+	backface-visibility: hidden;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transform: rotateY(180deg);
+	background-color: var(--contrast);
+	border-radius: 18px;
+}
+
+.back > a {
+	position: absolute;
+	bottom: 5px;
+}
+
+.photo {
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+}
+
+.name {
+	font-size: 20px;
+}
+
+.rol {
+	font-size: 16px;
+}
+
+.description {
+	font-size: 16px;
+	color: var(--background);
+}
+
+.arrow {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	font-size: 24px;
+	cursor: pointer;
+	color: var(--background);
+}
