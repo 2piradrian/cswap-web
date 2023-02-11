@@ -1,0 +1,42 @@
+@import url(../../global/var.css);
+
+.box {
+	height: 450px;
+	width: 300px;
+	border-radius: 18px;
+	border: 1px solid var(--main);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.image {
+	height: 70%;
+	width: 100%;
+	border-radius: 18px 18px 0px 0px;
+}
+
+.boxContent {
+	height: 30%;
+	width: 100%;
+	color: var(--background);
+	background-color: var(--main);
+	border-radius: 0px 0px 18px 18px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	font-size: 25px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.description {
+	font-weight: 300;
+	font-size: 14px;
+	text-align: center;
+}
