@@ -8,6 +8,6 @@
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-evenly;
-	/* background-image: url(../../assets/patronCswap.svg);
-	background-size: cover; */
+	background-image: url(../../assets/patronCswap.svg);
+	background-size: cover;
 }
