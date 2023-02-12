@@ -5,9 +5,10 @@ type Props = {
 	children: React.ReactNode;
 	background?: string;
 	height?: boolean;
+	id?: string;
 };
 
-function Container({ children, background, height }: Props) {
+function Container({ children, background, height, id }: Props) {
 	// Custom styles in container
 	const containerStyle = {
 		backgroundColor: background ? background : "var(--background)",
@@ -15,7 +16,7 @@ function Container({ children, background, height }: Props) {
 	};
 
 	return (
-		<section className="container" style={containerStyle}>
+		<section className="container" style={containerStyle} id={id}>
 			<div className="content">{children}</div>
 		</section>
 	);

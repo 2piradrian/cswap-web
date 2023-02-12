@@ -5,7 +5,7 @@ import style from "./services.module.css";
 function Services() {
 	return (
 		<Container height>
-			<div className={style.subcontainer}>
+			<div className={style.subcontainer} id="services">
 				<ServiceCard
 					title="Diseño de marca"
 					description="Definí la identidad de tu marca"

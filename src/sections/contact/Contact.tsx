@@ -15,7 +15,7 @@ function Contact() {
 	};
 
 	return (
-		<Container height>
+		<Container height id="contact">
 			<SectionTitle text="Contacto" />
 			<form className={style.subcontainer} onSubmit={handleSubmit}>
 				<input type="text" placeholder="Nombre" name="name" />

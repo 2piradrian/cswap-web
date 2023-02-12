@@ -4,7 +4,7 @@ import style from "./services.module.css";
 
 function Team() {
 	return (
-		<Container height>
+		<Container height id="team">
 			<div className={style.subcontainer}>
 				<FlipCard
 					name="Lucía Diaz"
