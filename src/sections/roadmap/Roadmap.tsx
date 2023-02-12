@@ -5,10 +5,12 @@ import style from "./roadmap.module.css";
 import code from "../../assets/bx-code.svg";
 import conversation from "../../assets/bx-conversation.svg";
 import vector from "../../assets/bx-vector.svg";
+import SectionTitle from "../../components/section-title/SectionTitle";
 
 function Roadmap() {
 	return (
-		<Container height="100vh">
+		<Container height>
+			<SectionTitle text="Roadmap" />
 			<div className={style.subcontainer}>
 				<RoadmapCard
 					icon={conversation}

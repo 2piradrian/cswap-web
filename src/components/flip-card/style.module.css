@@ -88,3 +88,9 @@
 	cursor: pointer;
 	color: var(--background);
 }
+
+@media (min-width: 900px) {
+	.arrow {
+		display: none;
+	}
+}

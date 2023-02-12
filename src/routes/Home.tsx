@@ -1,3 +1,4 @@
+import Contact from "../sections/contact/Contact";
 import Hero from "../sections/hero/Hero";
 import Portfolio from "../sections/portfolio/Portfolio";
 import Roadmap from "../sections/roadmap/Roadmap";
@@ -13,6 +14,7 @@ function Home() {
 			<Roadmap />
 			<Team />
 			<Portfolio />
+			<Contact />
 		</Layout>
 	);
 }

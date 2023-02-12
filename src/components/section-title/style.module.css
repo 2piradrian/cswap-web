@@ -1,0 +1,27 @@
+@import url(../../global/var.css);
+
+.text {
+	font-size: 45px;
+	font-weight: 600;
+	max-width: 120px;
+	margin-top: 30px;
+	padding-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 3px solid var(--contrast);
+	text-overflow: clip;
+	overflow: visible;
+	white-space: nowrap;
+}
+
+.text::after {
+	content: "";
+	padding: 5px 100px;
+	display: inline-block;
+	border-top: 0px solid var(--contrast);
+	border-bottom: 3px solid var(--contrast);
+	transform: rotate(180deg);
+	position: relative;
+}

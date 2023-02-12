@@ -5,11 +5,12 @@ type Props = {
 	children: React.ReactNode;
 	styles?: string;
 	url?: string;
+	target?: string;
 };
 
-function InvisibleAnchor({ children, styles, url }: Props) {
+function InvisibleAnchor({ children, styles, url, target }: Props) {
 	return (
-		<a href={url} className={`${style.anchor} ${styles}`}>
+		<a href={url} target={target} className={`${style.anchor} ${styles}`}>
 			{children}
 		</a>
 	);

@@ -1,0 +1,48 @@
+@import url(../../global/var.css);
+
+.subcontainer {
+	height: 100%;
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/* background-image: url(../../assets/patronCswap.svg);
+	background-size: auto; */
+}
+
+.subcontainer > input {
+	height: 40px;
+	width: 80%;
+	margin: 10px 0px;
+	padding-left: 10px;
+	max-width: 650px;
+	border: 2px solid var(--main);
+	border-radius: 5px;
+}
+
+.subcontainer > textarea {
+	height: 150px !important;
+	width: 80% !important;
+	margin: 10px 0px;
+	padding: 10px;
+	max-width: 650px;
+	border: 2px solid var(--main);
+	border-radius: 5px;
+	resize: none;
+}
+
+.subcontainer > button {
+	height: 40px;
+	width: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 15px 0px;
+	border: none;
+	border-radius: 10px;
+	color: var(--background);
+	background-color: var(--main);
+	cursor: pointer;
+}

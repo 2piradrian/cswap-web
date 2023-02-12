@@ -4,14 +4,14 @@ import "../global/global.css";
 type Props = {
 	children: React.ReactNode;
 	background?: string;
-	height?: string;
+	height?: boolean;
 };
 
 function Container({ children, background, height }: Props) {
 	// Custom styles in container
 	const containerStyle = {
 		backgroundColor: background ? background : "var(--background)",
-		height: height ? height : "auto",
+		minHeight: height ? "100vh" : "auto",
 	};
 
 	return (

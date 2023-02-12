@@ -5,11 +5,13 @@ import style from "./hero.module.css";
 
 function Hero() {
 	return (
-		<Container height="100vh">
+		<Container height>
 			<div className={style.subcontainer}>
 				{/* Titles */}
 				<h1 className={style.title}>Creamos Productos Digitales.</h1>
-				<h2 className={style.subtitle}>Centrados en el usuario y el negocio.</h2>
+				<h2 className={style.subtitle}>
+					Centrados en el usuario y el negocio.
+				</h2>
 				{/* Contact button */}
 				<InvisibleAnchor>
 					<MainButton text="Contáctanos" styles={style.button} />

@@ -1,0 +1,51 @@
+@import url(../../global/var.css);
+
+.subcontainer {
+	height: auto;
+	width: 90%;
+	margin: 20px 0px;
+	padding: 20px 10px;
+	max-width: 1000px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	background: var(--secbackground);
+	box-shadow: 3px 3px 5px -2px rgba(22, 22, 26, 0.3);
+	border-radius: 55px;
+	z-index: 2;
+	position: relative;
+}
+
+.subcontainer a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.subcontainer svg {
+	font-size: 48px;
+	color: var(--background);
+}
+
+.separator {
+	position: relative;
+	width: 100%;
+	height: 20px;
+	margin-top: 20px;
+	position: absolute;
+	top: -40px;
+}
+
+.separator::before {
+	position: absolute;
+	content: "";
+	left: 50%;
+	z-index: 10;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: inherit;
+	transform: translateX(-50%) translateY(50%);
+	bottom: 0px;
+	background-color: var(--contrast);
+}
