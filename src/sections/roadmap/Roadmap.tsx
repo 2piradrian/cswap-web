@@ -9,7 +9,7 @@ import SectionTitle from "../../components/section-title/SectionTitle";
 
 function Roadmap() {
 	return (
-		<Container height>
+		<div className={`bigcontainer ${style.background}`}>
 			<SectionTitle text="Roadmap" />
 			<div className={style.subcontainer}>
 				<RoadmapCard
@@ -25,7 +25,7 @@ function Roadmap() {
 					text="Etapa final, se desarrolla la web/app diseñada."
 				/>
 			</div>
-		</Container>
+		</div>
 	);
 }
 

@@ -4,8 +4,8 @@ import style from "./services.module.css";
 
 function Services() {
 	return (
-		<Container height>
-			<div className={style.subcontainer} id="services">
+		<div className={`bigcontainer ${style.background}`} id="services">
+			<div className={style.subcontainer}>
 				<ServiceCard
 					title="Diseño de marca"
 					description="Definí la identidad de tu marca"
@@ -22,7 +22,7 @@ function Services() {
 					url=""
 				/>
 			</div>
-		</Container>
+		</div>
 	);
 }
 

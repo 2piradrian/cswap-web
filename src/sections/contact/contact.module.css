@@ -1,15 +1,13 @@
 @import url(../../global/var.css);
 
 .subcontainer {
-	height: 100%;
 	width: 100%;
+	max-width: 1700px;
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	/* background-image: url(../../assets/patronCswap.svg);
-	background-size: auto; */
 }
 
 .subcontainer > input {

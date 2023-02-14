@@ -7,9 +7,7 @@ import style from "./footer.module.css";
 
 function Footer() {
 	return (
-		<footer
-			className="container"
-			style={{ height: "200px", backgroundColor: "var(--contrast)" }}>
+		<footer className={`smallcontainer ${style.background}`}>
 			<div className={style.separator} />
 			<div className={style.subcontainer}>
 				<InvisibleAnchor

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import isoDesk from "../../assets/isoDesk.svg";
+import InvisibleAnchor from "../../components/invisible-anchor/InvisibleAnchor";
 import Navbar from "./../../components/nav-bar/Navbar";
 import style from "./header.module.css";
 
@@ -16,9 +17,11 @@ function Header() {
 	}, [window]);
 
 	return (
-		<header className="container" style={{ position: "absolute" }}>
+		<header className={`smallcontainer ${style.background}`}>
 			<div className={style.subcontainer}>
-				<img src={isoDesk} className={style.iso} />
+				<InvisibleAnchor url="/home">
+					<img src={isoDesk} className={style.iso} />
+				</InvisibleAnchor>
 
 				<RxHamburgerMenu
 					className={style.burger}

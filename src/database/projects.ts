@@ -12,13 +12,13 @@ export const projectsArray: item[] = [
 	{
 		id: 0,
 		image: img0,
-		title: "Siete Colores (M.)",
-		text: "Diseño y desarrollo de e-commerce simple",
+		title: "Siete Colores",
+		text: "Diseño y desarrollo",
 	},
 	{
 		id: 1,
 		image: img1,
-		title: "Siete Colores (D.)",
-		text: "Diseño y desarrollo de e-commerce simple",
+		title: "La cocina de Gerard",
+		text: "Rediseño de marca",
 	},
 ];

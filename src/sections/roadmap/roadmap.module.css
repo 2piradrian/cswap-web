@@ -1,14 +1,12 @@
 @import url(../../global/var.css);
 
 .subcontainer {
-	height: 100%;
 	width: 100%;
+	max-width: 1700px;
 	gap: 20px;
 	padding: 20px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-evenly;
-	/* background-image: url(../../assets/patronCswap.svg);
-	background-size: auto; */
 }

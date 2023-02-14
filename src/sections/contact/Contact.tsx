@@ -15,7 +15,7 @@ function Contact() {
 	};
 
 	return (
-		<Container height id="contact">
+		<div className={`bigcontainer ${style.background}`} id="contact">
 			<SectionTitle text="Contacto" />
 			<form className={style.subcontainer} onSubmit={handleSubmit}>
 				<input type="text" placeholder="Nombre" name="name" />
@@ -25,7 +25,7 @@ function Contact() {
 					<MainButton text="Contactar" />
 				</button>
 			</form>
-		</Container>
+		</div>
 	);
 }
 

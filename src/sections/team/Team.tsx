@@ -4,7 +4,7 @@ import style from "./services.module.css";
 
 function Team() {
 	return (
-		<Container height id="team">
+		<div className={`bigcontainer ${style.background}`} id="team">
 			<div className={style.subcontainer}>
 				<FlipCard
 					name="Lucía Diaz"
@@ -21,7 +21,7 @@ function Team() {
 					rol="Frontend Developer"
 				/>
 			</div>
-		</Container>
+		</div>
 	);
 }
 

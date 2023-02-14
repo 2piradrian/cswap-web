@@ -1,5 +1,9 @@
 @import url(../../global/var.css);
 
+.background {
+	position: absolute;
+}
+
 .subcontainer {
 	height: 50px;
 	width: 90%;

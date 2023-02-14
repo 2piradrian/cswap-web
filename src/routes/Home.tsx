@@ -13,7 +13,6 @@ function Home() {
 			<Services />
 			<Roadmap />
 			<Team />
-			<Portfolio />
 			<Contact />
 		</Layout>
 	);
