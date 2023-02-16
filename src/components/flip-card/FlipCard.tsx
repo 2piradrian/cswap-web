@@ -25,7 +25,7 @@ function FlipCard({ image, name, rol, description, portfolio }: Props) {
 			</div>
 			<div className={style.back}>
 				<p className={style.description}>{description}</p>
-				<InvisibleAnchor url={portfolio}>
+				<InvisibleAnchor url={portfolio} label={`${name} portfolio`}>
 					<MainButton text="Portfolio" />
 				</InvisibleAnchor>
 			</div>

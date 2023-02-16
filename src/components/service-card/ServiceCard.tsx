@@ -14,7 +14,7 @@ function ServiceCard({ title, description, url }: Props) {
 
 			<p className={style.description}>{description}</p>
 
-			<InvisibleAnchor styles={style.hire}>
+			<InvisibleAnchor styles={style.hire} label="contratar">
 				<p>Contratar</p>
 			</InvisibleAnchor>
 		</div>

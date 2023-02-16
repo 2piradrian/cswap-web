@@ -14,10 +14,10 @@ function Hero() {
 					Centrados en el usuario y el negocio.
 				</h2>
 				<div className={style.buttonContainer}>
-					<InvisibleAnchor url="#contact">
+					<InvisibleAnchor url="#contact" label="contactanos">
 						<MainButton text="Contáctanos" styles={style.button} />
 					</InvisibleAnchor>
-					<InvisibleAnchor url="/portfolio">
+					<InvisibleAnchor url="/portfolio" label="proyectos">
 						<SecondaryButton
 							text="Ver Proyectos"
 							styles={style.button}

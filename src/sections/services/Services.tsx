@@ -1,5 +1,4 @@
 import ServiceCard from "../../components/service-card/ServiceCard";
-import Container from "./../../layouts/Container";
 import style from "./services.module.css";
 
 function Services() {
