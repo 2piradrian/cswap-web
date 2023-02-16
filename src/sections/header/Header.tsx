@@ -19,8 +19,12 @@ function Header() {
 	return (
 		<header className={`smallcontainer ${style.background}`}>
 			<div className={style.subcontainer}>
-				<InvisibleAnchor url="/home">
-					<img src={isoDesk} className={style.iso} />
+				<InvisibleAnchor url="/home" label="home">
+					<img
+						src={isoDesk}
+						className={style.iso}
+						alt="isologotipo"
+					/>
 				</InvisibleAnchor>
 
 				<RxHamburgerMenu

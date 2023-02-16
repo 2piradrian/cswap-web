@@ -12,19 +12,22 @@ function Footer() {
 			<div className={style.subcontainer}>
 				<InvisibleAnchor
 					url="https://api.whatsapp.com/send?phone=543516135462"
-					target="_blank">
+					target="_blank"
+					label="Whatsapp">
 					<BsWhatsapp />
 				</InvisibleAnchor>
 
 				<InvisibleAnchor
 					url="mailto:dev.cswap@gmail.com"
-					target="_blank">
+					target="_blank"
+					label="Mail">
 					<TbMail />
 				</InvisibleAnchor>
 
 				<InvisibleAnchor
 					url="https://www.instagram.com/coo.swap/"
-					target="_blank">
+					target="_blank"
+					label="Instagram">
 					<BsInstagram />
 				</InvisibleAnchor>
 			</div>

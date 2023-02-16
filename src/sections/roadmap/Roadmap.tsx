@@ -14,14 +14,17 @@ function Roadmap() {
 			<div className={style.subcontainer}>
 				<RoadmapCard
 					icon={conversation}
+					alt=""
 					text="Investigación y análisis, nos contactamos con el cliente."
 				/>
 				<RoadmapCard
 					icon={vector}
+					alt=""
 					text="Comenzamos a generar una identidad de diseño."
 				/>
 				<RoadmapCard
 					icon={code}
+					alt=""
 					text="Etapa final, se desarrolla la web/app diseñada."
 				/>
 			</div>
