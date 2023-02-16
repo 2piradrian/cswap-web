@@ -1,6 +1,5 @@
 import InvisibleAnchor from "../../components/invisible-anchor/InvisibleAnchor";
 import MainButton from "../../components/main-button/MainButton";
-import Container from "../../layouts/Container";
 import SecondaryButton from "./../../components/secondary-button/SecondaryButton";
 import style from "./hero.module.css";
 

@@ -16,7 +16,7 @@ function Portfolio() {
 						<ProjectCard {...item} key={item.id} />
 					))}
 				</div>
-				<InvisibleAnchor url="/home#contact">
+				<InvisibleAnchor url="/home#contact" label="Contactanos">
 					<MainButton text="Contáctanos" styles={style.button} />
 				</InvisibleAnchor>
 			</div>
