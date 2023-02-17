@@ -34,12 +34,9 @@ function TyC() {
 					con el diseñador a cargo del sitio. El cliente deberá
 					comunicar formalmente las modificaciones. La aprobación se
 					llevará a efecto mediante la aceptación expresa de la página
-					web, lo que podrá ocurrir por cualquier medio. Una vez
-					aprobada o publicada, el cliente tendrá permisos de
-					administrador sobre el sitio, para modificar los contenidos
-					de la página sin costo alguno. El cliente acepta que
-					cualquier modificación posterior a la aprobación de la
-					página y por tanto, entrega, tendrá un costo adicional
+					web, lo que podrá ocurrir por cualquier medio. El cliente
+					acepta que cualquier modificación posterior a la aprobación
+					de la página y por tanto, entrega, tendrá un costo adicional
 					previo cotización. Todas las modificaciones que excedan lo
 					contemplado por el detalle de la página tendrán un costo
 					extra. Dicho costo será comunicado al cliente previamente.
@@ -48,19 +45,7 @@ function TyC() {
 				</p>
 				<p>3.1 Servicios adicionales</p>
 				<p>
-					3.1.1. Mantenimiento. Para aquellos clientes que tienen
-					contratado servicio de mantenimiento mensual este deberá ser
-					abonado del 1 al 10 de cada mes. La cancelación del servicio
-					de mantenimiento se podrá realizar indefectiblemente 10 días
-					antes de iniciar la próxima facturación, caso contrario se
-					procederá a generar un nuevo mes de facturación. Asimismo,
-					se deja expresamente establecido que el servicio de
-					mantenimiento no incluye reformas y rediseño de elementos en
-					la página. Para ello se deberá solicitar una nueva
-					cotización adicional al proyecto inicial.
-				</p>
-				<p>
-					3.1.2. Publicidad. Dejamos expresamente establecido que el
+					3.1.1. Publicidad. Dejamos expresamente establecido que el
 					servicio de campañas publicitarias en redes sociales,
 					google. etc.. Esto no garantiza que el cliente posea más
 					ventas y/o contratación de sus servicios.
