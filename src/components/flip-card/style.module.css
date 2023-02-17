@@ -1,14 +1,15 @@
 @import url(../../global/var.css);
 
 .card {
-	height: 300px;
-	width: 300px;
+	height: 340px;
+	width: 340px;
+	margin: 20px;
 	border-radius: 18px;
 	background-color: var(--contrast);
 	color: var(--background);
 	text-align: center;
 	position: relative;
-	perspective: 600px;
+	perspective: 700px;
 	float: left;
 	transition: transform 1s;
 	transform-style: preserve-3d;
@@ -62,13 +63,13 @@
 }
 
 .photo {
-	height: 120px;
-	width: 120px;
+	height: 140px;
+	width: 140px;
 	border-radius: 50%;
 }
 
 .name {
-	font-size: 20px;
+	font-size: 24px;
 }
 
 .rol {

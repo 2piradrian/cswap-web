@@ -1,6 +1,7 @@
 import SectionTitle from "../../components/section-title/SectionTitle";
 import Container from "./../../layouts/Container";
 import style from "./tyc.module.css";
+
 function TyC() {
 	return (
 		<Container height>
