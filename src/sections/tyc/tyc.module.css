@@ -3,8 +3,7 @@
 .subcontainer {
 	min-height: 100vh;
 	width: 100%;
-	gap: 20px;
-	padding: 20px;
+	padding: 50px 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -13,7 +12,11 @@
 
 .subcontainer > p {
 	width: 80%;
-	margin: 50px 0px;
+	margin: 10px 0px;
 	max-width: 1000px;
 	font-size: 18px;
+}
+
+h2 {
+	margin: 80px;
 }

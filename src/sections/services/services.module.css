@@ -16,3 +16,9 @@
 	align-items: center;
 	justify-content: space-evenly;
 }
+
+.button {
+	height: 60px;
+	width: 270px;
+	margin: 50px;
+}

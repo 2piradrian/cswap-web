@@ -1,4 +1,6 @@
+import InvisibleAnchor from "../../components/invisible-anchor/InvisibleAnchor";
 import ServiceCard from "../../components/service-card/ServiceCard";
+import SecondaryButton from "./../../components/secondary-button/SecondaryButton";
 import style from "./services.module.css";
 
 function Services() {
@@ -24,6 +26,12 @@ function Services() {
 					url="https://api.whatsapp.com/send?phone=543516135462&text=Hola%2C%20escribo%20desde%20la%20p%C3%A1gina%20de%20c-swap.%20Me%20gustar%C3%ADa%20contratar%20el%20siguiente%20servicio%3A%20(Dise%C3%B1o%20y%20desarrollo)."
 				/>
 			</div>
+			<InvisibleAnchor url="/tyc" label="terminos y condiciones">
+				<SecondaryButton
+					text="Ver términos y condiciones"
+					styles={style.button}
+				/>
+			</InvisibleAnchor>
 		</div>
 	);
 }
