@@ -1,9 +1,10 @@
 import ProjectCard from "../../components/project-card/ProjectCard";
 import SectionTitle from "../../components/section-title/SectionTitle";
-import InvisibleAnchor from "./../../components/invisible-anchor/InvisibleAnchor";
 import MainButton from "./../../components/main-button/MainButton";
+import { HashLink as Link } from "react-router-hash-link";
+
 import { projectsArray } from "./../../database/projects";
-import Container from "./../../layouts/Container";
+
 import style from "./portfolio.module.css";
 
 function Portfolio() {
@@ -16,9 +17,9 @@ function Portfolio() {
 						<ProjectCard {...item} key={item.id} />
 					))}
 				</div>
-				<InvisibleAnchor url="/home#contact" label="Contactanos">
+				<Link to="/home#contact" aria-label="Contactanos">
 					<MainButton text="Contáctanos" styles={style.button} />
-				</InvisibleAnchor>
+				</Link>
 			</div>
 		</div>
 	);

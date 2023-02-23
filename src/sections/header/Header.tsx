@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { Link } from "react-router-dom";
 import isoDesk from "../../assets/isoDesk.svg";
-import InvisibleAnchor from "../../components/invisible-anchor/InvisibleAnchor";
 import Navbar from "./../../components/nav-bar/Navbar";
+
 import style from "./header.module.css";
 
 function Header() {
@@ -19,13 +20,13 @@ function Header() {
 	return (
 		<header className={`smallcontainer ${style.background}`}>
 			<div className={style.subcontainer}>
-				<InvisibleAnchor url="/home" label="home">
+				<Link to="/home" aria-label="home">
 					<img
 						src={isoDesk}
 						className={style.iso}
 						alt="isologotipo"
 					/>
-				</InvisibleAnchor>
+				</Link>
 
 				<RxHamburgerMenu
 					className={style.burger}

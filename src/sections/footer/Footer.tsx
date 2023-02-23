@@ -1,8 +1,6 @@
 import { BsInstagram, BsWhatsapp } from "react-icons/bs";
 import { TbMail } from "react-icons/tb";
 
-import InvisibleAnchor from "../../components/invisible-anchor/InvisibleAnchor";
-
 import style from "./footer.module.css";
 
 function Footer() {
@@ -10,26 +8,26 @@ function Footer() {
 		<footer className={`smallcontainer ${style.background}`}>
 			<div className={style.separator} />
 			<div className={style.subcontainer}>
-				<InvisibleAnchor
-					url="https://api.whatsapp.com/send?phone=543516135462"
+				<a
+					href="https://api.whatsapp.com/send?phone=543516135462"
 					target="_blank"
-					label="Whatsapp">
+					aria-label="Whatsapp">
 					<BsWhatsapp />
-				</InvisibleAnchor>
+				</a>
 
-				<InvisibleAnchor
-					url="mailto:dev.cswap@gmail.com"
+				<a
+					href="mailto:dev.cswap@gmail.com"
 					target="_blank"
-					label="Mail">
+					aria-label="Mail">
 					<TbMail />
-				</InvisibleAnchor>
+				</a>
 
-				<InvisibleAnchor
-					url="https://www.instagram.com/coo.swap/"
+				<a
+					href="https://www.instagram.com/coo.swap/"
 					target="_blank"
-					label="Instagram">
+					aria-label="Instagram">
 					<BsInstagram />
-				</InvisibleAnchor>
+				</a>
 			</div>
 		</footer>
 	);

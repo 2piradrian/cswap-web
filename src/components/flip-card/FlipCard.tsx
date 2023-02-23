@@ -1,5 +1,4 @@
 import { AiOutlineArrowRight } from "react-icons/ai";
-import InvisibleAnchor from "./../invisible-anchor/InvisibleAnchor";
 import MainButton from "./../main-button/MainButton";
 import style from "./style.module.css";
 
@@ -24,12 +23,12 @@ function FlipCard({ image, name, rol, description, portfolio }: Props) {
 			</div>
 			<div className={style.back}>
 				<p className={style.description}>{description}</p>
-				<InvisibleAnchor
-					url={portfolio}
-					label={`${name} linkedin`}
+				<a
+					href={portfolio}
+					aria-label={`${name} linkedin`}
 					target="_blank">
 					<MainButton text="💼 LinkedIn" />
-				</InvisibleAnchor>
+				</a>
 			</div>
 		</div>
 	);

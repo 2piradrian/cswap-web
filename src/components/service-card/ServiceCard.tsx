@@ -1,4 +1,3 @@
-import InvisibleAnchor from "../invisible-anchor/InvisibleAnchor";
 import style from "./style.module.css";
 
 type Props = {
@@ -15,13 +14,13 @@ function ServiceCard({ title, description, url, target }: Props) {
 
 			<p className={style.description}>{description}</p>
 
-			<InvisibleAnchor
-				styles={style.hire}
-				label="contratar"
-				url={url}
+			<a
+				className={style.hire}
+				aria-label="contratar"
+				href={url}
 				target={target}>
 				<p>Contratar</p>
-			</InvisibleAnchor>
+			</a>
 		</div>
 	);
 }

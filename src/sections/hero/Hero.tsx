@@ -1,6 +1,7 @@
-import InvisibleAnchor from "../../components/invisible-anchor/InvisibleAnchor";
+import { Link } from "react-router-dom";
 import MainButton from "../../components/main-button/MainButton";
 import SecondaryButton from "./../../components/secondary-button/SecondaryButton";
+
 import style from "./hero.module.css";
 
 function Hero() {
@@ -13,15 +14,15 @@ function Hero() {
 					Centrados en el usuario y el negocio.
 				</h2>
 				<div className={style.buttonContainer}>
-					<InvisibleAnchor url="#contact" label="contactanos">
+					<Link to="#contact" aria-label="contactanos">
 						<MainButton text="Contáctanos" styles={style.button} />
-					</InvisibleAnchor>
-					<InvisibleAnchor url="/portfolio" label="proyectos">
+					</Link>
+					<Link to="/portfolio" aria-label="proyectos">
 						<SecondaryButton
 							text="Ver Proyectos"
 							styles={style.button}
 						/>
-					</InvisibleAnchor>
+					</Link>
 				</div>
 			</div>
 		</div>
