@@ -17,7 +17,7 @@ function Services() {
 			<div className={style.container + " delimiter"}>
 				<Title title="Mira todo lo que tenemos para ofrecerte" />
 				<div className={style.serviceContainer}>
-					<ServiceCard service="Diseño de identidad" icon={design} deco={deco1} />
+					<ServiceCard service="Diseño gráfico" icon={design} deco={deco1} />
 					<ServiceCard service="Programación web" icon={develop} deco={deco2} />
 					<ServiceCard service="Diseño UX/UI" icon={uxui} deco={deco3} />
 				</div>
