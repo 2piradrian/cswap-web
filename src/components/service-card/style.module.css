@@ -1,6 +1,6 @@
 .container {
-	height: 400px;
-	width: 280px;
+	height: 450px;
+	width: 320px;
 	position: relative;
 	border: 2px solid var(--main);
 	border-radius: 10px;

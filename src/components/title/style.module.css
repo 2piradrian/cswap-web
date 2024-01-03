@@ -1,7 +1,9 @@
 .text {
 	font-weight: 700;
-	font-size: 32px;
+	font-size: 36px;
 	color: var(--contrast);
 	text-align: center;
 	margin: 0px 15px;
+	padding: 5px 20px;
+	border-bottom: 2px dashed var(--main);
 }

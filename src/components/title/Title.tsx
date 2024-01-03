@@ -6,7 +6,7 @@ type Props = {
 };
 
 function Title({ title }: Props) {
-	return <h2 className={style.text}>{title}</h2>;
+	return <h2 className={style.text}>• {title} •</h2>;
 }
 
 export default Title;

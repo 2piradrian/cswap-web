@@ -6,12 +6,14 @@ import style from "./style.module.css";
 
 export default function Hero() {
 	return (
-		<section className="bigcontainer">
-			<GradientTitle title="Creamos productos digitales" />
-			<h2 className={style.subtitle}>Centrados en el usuario y en el negocio</h2>
-			<Image src={heroimage} alt="" className={style.decoration} />
-			<div className={style.arrow}>
-				<Image src={arrow} alt="arrow" />
+		<section className={`${style.container} section`}>
+			<div className="delimiter">
+				<GradientTitle title="Creamos productos digitales" />
+				<h2 className={style.subtitle}>Centrados en el usuario y en el negocio</h2>
+				<Image src={heroimage} alt="" className={style.decoration} />
+				<div className={style.arrow}>
+					<Image src={arrow} alt="arrow" />
+				</div>
 			</div>
 		</section>
 	);

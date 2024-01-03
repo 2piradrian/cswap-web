@@ -17,7 +17,7 @@ export default function Header() {
 	}, []);
 
 	return (
-		<header className={`smallcontainer ${style.background}`}>
+		<header className={style.container}>
 			<div className={style.subcontainer}>
 				<Link href="/" aria-label="home" className={style.homelink}>
 					<div className={style.homelink}>
