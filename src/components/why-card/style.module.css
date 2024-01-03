@@ -9,9 +9,12 @@
 	align-items: center;
 	overflow: hidden;
 	text-align: center;
+	background-color: var(--main);
+	border-radius: 10px;
 }
 
 .name {
 	font-weight: 600;
-	font-size: 24px;
+	font-size: 22px;
+	color: var(--background);
 }
