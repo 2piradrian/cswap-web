@@ -1,7 +1,9 @@
 import Header from "@/components/header/Header";
 import Explain from "@/sections/explain/Explain";
+import Footer from "@/sections/footer/Footer";
 import Hero from "@/sections/hero/Hero";
 import Services from "@/sections/services/Services";
+import Why from "@/sections/why/Why";
 
 export default function Home() {
 	return (
@@ -11,6 +13,8 @@ export default function Home() {
 				<Hero />
 				<Services />
 				<Explain />
+				<Why />
+				<Footer />
 			</main>
 		</>
 	);

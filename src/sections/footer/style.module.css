@@ -1,0 +1,5 @@
+.container {
+	min-height: 0%;
+	height: 200px !important;
+	background-color: var(--footer);
+}

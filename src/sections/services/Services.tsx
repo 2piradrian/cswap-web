@@ -14,7 +14,7 @@ import deco3 from "@/assets/decoration/service-card-deco3.svg";
 function Services() {
 	return (
 		<section className="section" id="services">
-			<div className={style.container + " delimiter"}>
+			<div className={`${style.container} delimiter`}>
 				<Title title="Mira todo lo que tenemos para ofrecerte" />
 				<div className={style.serviceContainer}>
 					<ServiceCard service="Diseño gráfico" icon={design} deco={deco1} />
