@@ -10,6 +10,7 @@ import uxui from "@/assets/icons/uxui-service.svg";
 import deco1 from "@/assets/decoration/service-card-deco1.svg";
 import deco2 from "@/assets/decoration/service-card-deco2.svg";
 import deco3 from "@/assets/decoration/service-card-deco3.svg";
+import MainButton from "@/components/main-button/MainButton";
 
 function Services() {
 	return (
@@ -21,7 +22,7 @@ function Services() {
 					<ServiceCard service="Programación web" icon={develop} deco={deco2} />
 					<ServiceCard service="Diseño UX/UI" icon={uxui} deco={deco3} />
 				</div>
-				<div className={style.contactButton}>Contrátanos</div>
+				<MainButton content="Contáctanos" url="" />
 			</div>
 		</section>
 	);

@@ -4,8 +4,8 @@ import style from "./style.module.css";
 
 export default function Why() {
 	return (
-		<section className="section">
-			<div className="delimiter">
+		<section className={`${style.section} section`}>
+			<div className={`${style.section} delimiter`}>
 				<Title title="¿Por qué nosotros?" />
 				<div className={style.cardContainer}>
 					<WhyCard
