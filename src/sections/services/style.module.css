@@ -9,11 +9,19 @@
 }
 
 .serviceContainer {
-	width: 100%;
+	width: 90%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	padding: 15px;
+	padding: 40px 0px;
+	gap: 45px;
+}
+
+.serviceContainer > div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 	gap: 45px;
 }

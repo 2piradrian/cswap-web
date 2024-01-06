@@ -18,9 +18,14 @@ function Services() {
 			<div className={`${style.container} delimiter`}>
 				<Title title="Mira todo lo que tenemos para ofrecerte" />
 				<div className={style.serviceContainer}>
-					<ServiceCard service="Diseño gráfico" icon={design} deco={deco1} />
-					<ServiceCard service="Programación web" icon={develop} deco={deco2} />
-					<ServiceCard service="Diseño UX/UI" icon={uxui} deco={deco3} />
+					<div>
+						<ServiceCard service="Diseño gráfico" icon={design} deco={deco1} />
+						<ServiceCard service="Programación web" icon={develop} deco={deco2} />
+					</div>
+					<div>
+						<ServiceCard service="Programación de Apps" icon={uxui} deco={deco3} />
+						<ServiceCard service="Diseño UX/UI" icon={uxui} deco={deco3} />
+					</div>
 				</div>
 				<MainButton content="Contáctanos" url="" />
 			</div>

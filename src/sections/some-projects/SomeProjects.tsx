@@ -9,10 +9,14 @@ export default function SomeProjects() {
 			<div className={`${style.section} delimiter`}>
 				<Title title="Algunos de nuestros proyectos" />
 				<div className={style.projectContainer}>
-					<ProjectCard />
-					<ProjectCard />
-					<ProjectCard />
-					<ProjectCard />
+					<div>
+						<ProjectCard />
+						<ProjectCard />
+					</div>
+					<div>
+						<ProjectCard />
+						<ProjectCard />
+					</div>
 				</div>
 				<MainButton content="Ver más" url="" />
 			</div>
