@@ -4,6 +4,7 @@ import style from "./style.module.css";
 import React from "react";
 
 import design from "@/assets/icons/design-service.svg";
+import app from "@/assets/icons/app-service.svg";
 import develop from "@/assets/icons/develop-service.svg";
 import uxui from "@/assets/icons/uxui-service.svg";
 
@@ -23,7 +24,7 @@ function Services() {
 						<ServiceCard service="Programación web" icon={develop} deco={deco2} />
 					</div>
 					<div>
-						<ServiceCard service="Programación de Apps" icon={uxui} deco={deco3} />
+						<ServiceCard service="Programación mobile" icon={app} deco={deco1} />
 						<ServiceCard service="Diseño UX/UI" icon={uxui} deco={deco3} />
 					</div>
 				</div>
