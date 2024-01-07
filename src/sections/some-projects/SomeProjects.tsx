@@ -39,7 +39,7 @@ export default function SomeProjects() {
 						/>
 					</div>
 				</div>
-				<MainButton content="Ver más" url="" />
+				<MainButton content="Ver más" url="/projects" />
 			</div>
 		</div>
 	);
