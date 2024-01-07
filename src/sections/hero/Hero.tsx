@@ -3,6 +3,7 @@ import heroimage from "../../assets/images/heroimage.svg";
 import Image from "next/image";
 import arrow from "../../assets/icons/arrow.svg";
 import style from "./style.module.css";
+import Link from "next/link";
 
 export default function Hero() {
 	return (
@@ -11,9 +12,9 @@ export default function Hero() {
 				<GradientTitle title="Creamos productos digitales" />
 				<h2 className={style.subtitle}>Centrados en el usuario y en el negocio</h2>
 				<Image src={heroimage} alt="" className={style.decoration} />
-				<div className={style.arrow}>
+				<Link className={style.arrow} href="/#services">
 					<Image src={arrow} alt="arrow" />
-				</div>
+				</Link>
 			</div>
 		</section>
 	);
