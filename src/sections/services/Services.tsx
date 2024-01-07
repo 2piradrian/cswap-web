@@ -28,7 +28,10 @@ function Services() {
 						<ServiceCard service="Diseño UX/UI" icon={uxui} deco={deco3} />
 					</div>
 				</div>
-				<MainButton content="Contáctanos" url="" />
+				<MainButton
+					content="Contáctanos"
+					url="https://api.whatsapp.com/send?phone=543516135462&text=Hola%2C%20me%20gustar%C3%ADa%20contratar%20uno%20de%20los%20servicios%20de%20C-Swap."
+				/>
 			</div>
 		</section>
 	);

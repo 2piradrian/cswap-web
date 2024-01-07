@@ -11,11 +11,14 @@
 
 html {
 	scroll-behavior: smooth;
+	width: 100vw;
 }
 
 body {
-	width: 100%;
+	width: 100vw;
 	display: flex;
+	flex-direction: column;
+	position: relative;
 	justify-content: center;
 	background-color: var(--background);
 }
