@@ -1,5 +1,5 @@
 import style from "./style.module.css";
-import isologotype from "../../assets/images/isologotype.svg"
+import isologotype from "../../assets/images/isologotype.svg";
 import Image from "next/image";
 
 export default function Footer() {
@@ -12,6 +12,7 @@ export default function Footer() {
 						<div className={style.contact}>
 							<h5 className={style.footerTitle}>Contáctanos</h5>
 							<p>cswap.dev@gmail.com</p>
+							<p>+54 351 6135462</p>
 							<p>coo.swap</p>
 						</div>
 						<div>
