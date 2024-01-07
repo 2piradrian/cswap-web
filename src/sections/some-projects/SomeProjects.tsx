@@ -3,6 +3,11 @@ import style from "./style.module.css";
 import ProjectCard from "@/components/project-card/ProjectCard";
 import MainButton from "@/components/main-button/MainButton";
 
+import project1 from "@/assets/projects/1.jpg";
+import project2 from "@/assets/projects/2.jpg";
+import project3 from "@/assets/projects/3.jpg";
+import project4 from "@/assets/projects/4.jpg";
+
 export default function SomeProjects() {
 	return (
 		<div className={`${style.section} section`}>
@@ -10,12 +15,28 @@ export default function SomeProjects() {
 				<Title title="Algunos de nuestros proyectos" />
 				<div className={style.projectContainer}>
 					<div>
-						<ProjectCard />
-						<ProjectCard />
+						<ProjectCard
+							title="Coty Diaz"
+							description="Diseño de marca"
+							image={project1.src}
+						/>
+						<ProjectCard
+							title="La Cocina de Gerard"
+							description="Re-diseño de marca"
+							image={project2.src}
+						/>
 					</div>
 					<div>
-						<ProjectCard />
-						<ProjectCard />
+						<ProjectCard
+							title="Ayudante de Santa"
+							description="Desarrollo web"
+							image={project3.src}
+						/>
+						<ProjectCard
+							title="Placeholder"
+							description="Placeholder"
+							image={project3.src}
+						/>
 					</div>
 				</div>
 				<MainButton content="Ver más" url="" />

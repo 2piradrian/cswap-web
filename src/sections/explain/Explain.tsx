@@ -4,7 +4,7 @@ export default function Explain() {
 	return (
 		<section className={`${style.spikes} section ${style.background}`}>
 			<div className={style.separator} />
-			<div className="delimiter">
+			<div className={`${style.container} delimiter`}>
 				<div className={style.textContainer}>
 					<h2 className={style.title}>Diseño web</h2>
 					<p className={style.subtitle}>

@@ -1,14 +1,20 @@
 import style from "./style.module.css";
 
-export default function ProjectCard() {
+export default function ProjectCard({
+	image = "https://via.placeholder.com/300x150",
+	title,
+	description,
+}: {
+	image: string;
+	title: string;
+	description: string;
+}) {
 	return (
 		<div className={style.card}>
-			<img src="https://via.placeholder.com/300x150" alt="Project Image" />
+			<img src={image} alt={`Image for ${title}`} />
 			<div className={style.cardContent}>
-				<h3>Project Title</h3>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.
-				</p>
+				<h3>{title}</h3>
+				<p>{description}</p>
 			</div>
 		</div>
 	);
