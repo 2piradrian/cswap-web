@@ -1,7 +1,7 @@
 import Image from "next/image";
+import NavItem from "./NavItem";
 import cross from "@/assets/icons/bxs-cross.svg";
 import style from "./style.module.css";
-import NavItem from "./NavItem";
 
 type Props = {
 	setClosed: Function;
@@ -18,8 +18,7 @@ export default function Navbar({ setClosed, closed }: Props) {
 			<Image src={cross} alt="burger icon" className={style.close} />
 			<ul className={style.navList}>
 				<NavItem href="/#services" arialabel="Servicios" title="Servicios" />
-				<NavItem href="/portfolio" arialabel="Proyectos" title="Proyectos" />
-				<NavItem href="/#team" arialabel="Equipo" title="Equipo" />
+				<NavItem href="/projects" arialabel="Proyectos" title="Proyectos" />
 				<NavItem href="/#contact" arialabel="Contacto" title="Contacto" />
 			</ul>
 		</div>
