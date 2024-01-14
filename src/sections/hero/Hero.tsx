@@ -11,9 +11,9 @@ export default function Hero() {
 			<div className="delimiter">
 				<GradientTitle title="Creamos productos digitales" />
 				<h2 className={style.subtitle}>Centrados en el usuario y en el negocio</h2>
-				<Image src={heroimage} alt="" className={style.decoration} />
+				<Image src={heroimage} alt="" className={style.decoration} loading="eager" />
 				<Link className={style.arrow} href="/#services">
-					<Image src={arrow} alt="arrow" loading="lazy" />
+					<Image src={arrow} alt="arrow" />
 				</Link>
 			</div>
 		</section>
