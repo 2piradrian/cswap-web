@@ -1,10 +1,10 @@
-import style from "./style.module.css";
-import isologotype from "../../assets/images/isologotype.svg";
 import Image from "next/image";
+import isologotype from "../../assets/images/isologotype.svg";
+import style from "./style.module.css";
 
 export default function Footer() {
 	return (
-		<footer className={`${style.container} section`}>
+		<footer className={`${style.container} section`} id="contact">
 			<div className="delimiter">
 				<div className={style.contentContainer}>
 					<Image src={isologotype} alt="isologotipo" />
@@ -16,7 +16,7 @@ export default function Footer() {
 							<p>coo.swap</p>
 						</div>
 						<div>
-							<h5 className={style.footerTitle}>CSwap</h5>
+							<h5 className={style.footerTitle}>C-Swap</h5>
 							<p>Términos y condiciones</p>
 							<p>Córdoba, Argentina</p>
 						</div>
