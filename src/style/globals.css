@@ -12,6 +12,7 @@
 html {
 	scroll-behavior: smooth;
 	width: 100vw;
+	overflow-y: hidden;
 }
 
 body {
