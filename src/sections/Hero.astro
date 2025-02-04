@@ -1,0 +1,18 @@
+---
+import style from "./style.module.css";
+import GradientTitle from "../components/gradient-title/GradientTitle.astro";
+import FilledAnchorButton from "../components/filled-anchor-button/FilledAnchorButton.astro";
+import OutlinedAnchorButton from "../components/outlined-anchor-button/OutlinedAnchorButton.astro";
+---
+
+<section class={`${style.container} section`}>
+    <img src="/assets/other/herodecoration.svg" alt="" class={style.decoration} />
+    <div class={`${style.subcontainer} delimiter`}>
+        <GradientTitle title="Creamos productos digitales" />
+        <h2 class={style.subtitle}>Centrados en el usuario y en el negocio</h2>
+        <div class={style.buttons}>
+            <FilledAnchorButton name="Contactanos" href="/contacto" ariaLabel="Contacto" />
+            <OutlinedAnchorButton name="Conocenos" href="/nosotros" ariaLabel="Nosotros" />
+        </div>
+    </div>
+</section>

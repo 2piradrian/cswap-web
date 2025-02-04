@@ -1,0 +1,16 @@
+.container {
+    height: 50px;
+    background-color: var(--main);
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: 0px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--on-main);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+}

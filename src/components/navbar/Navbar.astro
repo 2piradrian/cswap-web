@@ -1,0 +1,21 @@
+---
+import style from "./style.module.css";
+import NavItem from "../nav-item/NavItem.astro";
+---
+
+<nav>
+    <img id="burger-menu" src={"/assets/icons/bxs-menu.svg"} alt="open menu" class={style.burger} />
+    <div id="nav-box" class={`${style.navBox} ${style.navBoxInactive}`} data-navbox>
+        <div class={style.routesContainer}>
+            <img id="close-menu" src={"/assets/icons/bxs-cross.svg"} alt="close menu" class={style.close} />
+            <ul class={style.navList}>
+                <NavItem href="/#services" arialabel="Servicios" title="Servicios" number={1} />
+				<NavItem href="/projects" arialabel="Proyectos" title="Proyectos" number={2} />
+				<NavItem href="/#contact" arialabel="Contacto" title="Contacto" number={3} />
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script src="./script.js" />
+

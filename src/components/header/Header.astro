@@ -1,0 +1,18 @@
+---
+import style from "./style.module.css";
+import Navbar from "../navbar/Navbar.astro";
+---
+
+<header class={style.header}>
+    <div class={style.container}>
+        <div>
+            <a href="/" aria-label="home" class={style.linkhome}>
+                <div class={style.linkhome}>
+                    <img src={"/assets/icons/bxs-home.svg"} alt="home" class={style.iconhome} />
+                    <span>Inicio</span>
+                </div>
+            </a>
+        </div>
+        <Navbar />
+    </div>
+</header>
