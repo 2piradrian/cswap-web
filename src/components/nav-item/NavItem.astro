@@ -1,0 +1,25 @@
+---
+import style from "./style.module.css";
+
+type Props = {
+	href: string;
+	arialabel: string;
+	title: string;
+	number: number;
+};
+
+const { href, arialabel, title, number } = Astro.props;
+---
+
+<div class={style.navItem}>
+	<li class={style.navRoutes}>
+		<a href={href} aria-label={arialabel}>
+			<div class={style.navItemContent}>
+				<span class={style.number}>{number}</span>
+				<span class={style.title}>{title}</span>
+			</div>
+			<img src={"/assets/icons/bxs-arrow-up-right.svg"} alt="arrow" class={style.arrow} />
+		</a>
+	</li>
+	<hr class={style.divisor}/>
+</div>
