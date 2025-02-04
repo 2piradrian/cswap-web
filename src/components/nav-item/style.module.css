@@ -1,0 +1,64 @@
+.navRoutes {
+    list-style: none;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--on-surface);
+}
+
+.navRoutes > a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--tertiary);
+    transition: all 0.1s ease;
+}
+
+.arrow, .number, hr {
+    display: none;
+}
+
+@media (max-width: 900px) {
+
+    .arrow, .number, hr {
+        display: block;
+    }
+
+    .navItem {
+        width: 100%;
+    }
+
+    .navItemContent {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .navRoutes {
+        margin: 15px 0px;
+        padding: 0px 10px;
+    }
+
+    .navRoutes > a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .title {
+        font-size: 40px;
+        color: var(--on-background);
+        font-weight: 500;
+    }
+
+    .number {
+        font-size: 16px;
+        color: var(--on-background);
+        font-weight: 700;
+    }
+
+    .arrow {
+        height: 40px;
+        width: 40px;
+    }
+
+}

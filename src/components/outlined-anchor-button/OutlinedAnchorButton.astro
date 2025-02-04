@@ -1,0 +1,15 @@
+---
+import style from './style.module.css'
+
+type Props = {
+  name: string,
+  href: string,
+  ariaLabel: string
+}
+
+const { name, href, ariaLabel } = Astro.props;
+---
+
+<a class={style.container} href={href} aria-label={ariaLabel}>
+  { name }
+</a>
