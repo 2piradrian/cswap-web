@@ -6,8 +6,8 @@
 	--background: #FBF8FF;
 	--on-background: #1B134F ;
 	
-	--secondary: #DCDDFE ;
-	--on-secondary: #5E617D;
+	--secondary: #5E617D;
+	--on-secondary: #DCDDFE ;
 	
 	--tertiary: #7A81C7 ;
 	--on-tertiary: #DCDDFE;
@@ -16,5 +16,5 @@
 	--on-container: #5E617D;
 
 	--max-width: 1366px;
-	
+
 }
