@@ -1,14 +1,20 @@
 :root {
+	
 	--primary: #1B134F;
  	--on-primary: #FBF8FF;
-	--on-background: #1B134F ;
+	
 	--background: #FBF8FF;
+	--on-background: #1B134F ;
+	
 	--secondary: #DCDDFE ;
 	--on-secondary: #5E617D;
+	
 	--tertiary: #7A81C7 ;
 	--on-tertiary: #DCDDFE;
+	
 	--container: #FBF8FF;
 	--on-container: #5E617D;
 
 	--max-width: 1366px;
+	
 }

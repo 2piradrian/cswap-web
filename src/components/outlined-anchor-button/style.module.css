@@ -6,8 +6,8 @@
     border: 0px;
     cursor: pointer;
     text-decoration: none;
-    color: var(--main);
-    border: 2px solid var(--main);
+    color: var(--primary);
+    border: 2px solid var(--primary);
 
     display: flex;
     justify-content: center;
