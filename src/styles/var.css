@@ -1,17 +1,14 @@
 :root {
-	--main: #7f5af0;
-	--on-main: #fffffe;
-
-	--secondary: #2cb67d;
-
-	--surface: #94a1b25d;
-	--on-surface: #72757e;
-	
-	--background: #f6f4fe;
-	--on-background: #02010a;
-	
-	--footer: #02010a;
-	--contrast: #16161a;
+	--primary: #1B134F;
+ 	--on-primary: #FBF8FF;
+	--on-background: #1B134F ;
+	--background: #FBF8FF;
+	--secondary: #DCDDFE ;
+	--on-secondary: #5E617D;
+	--tertiary: #7A81C7 ;
+	--on-tertiary: #DCDDFE;
+	--container: #FBF8FF;
+	--on-container: #5E617D;
 
 	--max-width: 1366px;
 }
