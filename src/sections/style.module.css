@@ -20,6 +20,7 @@
 	margin: 20px 0px;
 	font-weight: 400;
 	font-size: 26px;
+	color: var(--secondary);
 }
 
 .buttons {

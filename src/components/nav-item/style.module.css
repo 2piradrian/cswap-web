@@ -2,14 +2,15 @@
     list-style: none;
     letter-spacing: 1px;
     text-align: center;
-    font-size: 14px;
-    color: var(--on-surface);
+    font-size: 16px;
+    color: var(--on-background);
 }
 
 .navRoutes > a {
     text-decoration: none;
     font-size: 18px;
-    color: var(--tertiary);
+    font-weight: 600;
+    color: var(--secondary);
     transition: all 0.1s ease;
 }
 
