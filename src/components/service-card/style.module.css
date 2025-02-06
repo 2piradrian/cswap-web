@@ -1,0 +1,38 @@
+.card {
+    height: 320px;
+    width: 320px;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: var(--surface);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.title {
+    padding: 12px 0px;
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--on-surface);
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--on-surface);
+}
+
+.iconContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 8px 0px;
+}
+
+.button {
+    width: 150px;
+    background-color: var(--tertiary);
+}

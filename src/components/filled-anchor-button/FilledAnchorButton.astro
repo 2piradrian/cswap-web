@@ -4,12 +4,13 @@ import style from './style.module.css'
 type Props = {
   name: string,
   href: string,
-  ariaLabel: string
+  ariaLabel: string,
+  modifier: string
 }
 
-const { name, href, ariaLabel } = Astro.props;
+const { name, href, ariaLabel, modifier = ""} = Astro.props;
 ---
 
-<a class={style.container} href={href} aria-label={ariaLabel}>
+<a class={`${style.container} ${modifier}` } href={href} aria-label={ariaLabel}>
   { name }
 </a>

@@ -1,0 +1,24 @@
+---
+import FilledAnchorButton from "../filled-anchor-button/FilledAnchorButton.astro";
+import style from "./style.module.css";
+
+const { title, description, icon, link } = Astro.props;
+---
+
+<div class={style.card}>
+    <img class={style.icon} src={icon} />
+    <h3 class={style.title}>
+        {title}
+    </h3>
+    <p class={style.description}>
+        {description}
+    </p>
+    <div class={style.iconContainer}>
+        <FilledAnchorButton 
+            name="Ver más" 
+            href={link} 
+            ariaLabel={"Ver más sobre " + title} 
+            modifier={style.button} 
+        />
+    </div>
+</div>
