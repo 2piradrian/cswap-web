@@ -25,6 +25,7 @@ body {
 
 .section {
 	width: 100vw;
+	min-width: var(--min-width);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
