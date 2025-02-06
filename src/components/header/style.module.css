@@ -40,7 +40,7 @@
 	justify-content: center;
 	align-items: center;
 	text-decoration: none;
-	color: var(--on-background);
+	color: var(--on-surface);
 	font-weight: 500;
 }
 
