@@ -10,7 +10,7 @@
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
-    color: var(--secondary);
+    color: var(--on-background);
     transition: all 0.1s ease;
 }
 
