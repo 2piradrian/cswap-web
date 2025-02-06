@@ -1,10 +1,12 @@
 ---
 import MediumTitle from "../../components/medium-title/MediumTitle.astro";
+import TextChip from "../../components/text-chip/TextChip.astro";
 import style from "./style.module.css";
 ---
 
 <section class={`${style.container} section`}>
+    <MediumTitle title="¿Por qué elegirnos?" />
     <div class={`${style.subcontainer} delimiter`}>
-        <MediumTitle title="¿Por qué elegirnos?" />
+        <TextChip content="Experiencia" />
     </div>
 </section>
