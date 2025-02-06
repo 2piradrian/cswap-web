@@ -3,17 +3,17 @@
 	--primary: #1B134F;
  	--on-primary: #FBF8FF;
 	
-	--background: #FBF8FF;
-	--on-background: #1B134F ;
-	
-	--secondary: #5E617D;
-	--on-secondary: #DCDDFE ;
+	--secondary: #DCDDFE;
+	--on-secondary: #63607A;
 	
 	--tertiary: #7A81C7 ;
 	--on-tertiary: #DCDDFE;
 	
-	--container: #FBF8FF;
-	--on-container: #5E617D;
+	--surface: #FBF8FF;
+	--on-surface: #63607A;
+
+	--background: #FBF8FF;
+	--on-background: #63607A ;
 
 	--max-width: 1366px;
 
