@@ -4,7 +4,7 @@ import style from './style.module.css';
 ---
 
 <section class={`${style.container} section`}>
-    <img src="/assets/other/herodecoration.svg" alt="" class={style.decoration} />
+    <img class={style.avobeDecoration} src="/assets/other/services_vectorABOVE.svg" alt="decoración" />
     <div class={`${style.subcontainer} delimiter`}>
         <ServiceCard
             title="Diseño gráfico" 
@@ -15,14 +15,15 @@ import style from './style.module.css';
         <ServiceCard
             title="Diseño UX/UI" 
             description="Mejorá la calidad de tus proyectos." 
-            icon="/assets/icons/service-gd.svg" 
+            icon="/assets/icons/service-uxui.svg" 
             link="/services/graphic-design" 
         />
         <ServiceCard
             title="Construcción" 
             description="Desarrollo e implementación de webs y aplicaciones android." 
-            icon="/assets/icons/service-gd.svg" 
+            icon="/assets/icons/service-dev.svg" 
             link="/services/graphic-design" 
         />
     </div>
+    <img class={style.belowDecoration} src="/assets/other/services_vectorBELOW.svg" alt="decoración" />
 </section>
