@@ -1,0 +1,19 @@
+---
+import style from "./style.module.css";
+
+type Props = {
+    image: string;
+    title: string;
+    description: string;
+};
+
+const { image, title, description } = Astro.props;
+---
+
+<div class={style.container}>
+    <img src={image} alt={title} class={style.image} />
+    <div class={style.content}>
+        <h3 class={style.title}>{title}</h3>
+        <p class={style.description}>{description}</p>
+    </div>
+</div>
