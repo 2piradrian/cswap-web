@@ -5,7 +5,7 @@ type Props = {
   name: string,
   href: string,
   ariaLabel: string,
-  modifier: string
+  modifier?: string
 }
 
 const { name, href, ariaLabel, modifier = ""} = Astro.props;
