@@ -1,0 +1,35 @@
+.container {
+    padding: 20px 0px;
+    background-color: var(--background);
+}
+
+.subcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.content {
+    min-height: 250px;
+    width: 320px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.content h3 {
+    color: var(--primary);
+    font-size: 36px;
+    width: 100%;
+}
+
+.content a, p {
+    color: var(--on-background);
+    width: 100%;
+}
