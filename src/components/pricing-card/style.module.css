@@ -1,5 +1,5 @@
 .container {
-    height: 450px;
+    height: 500px;
     width: 320px;
     padding: 4px;
     display: flex;
@@ -14,7 +14,7 @@
 .title {
     margin: 15px 0px;
     color: var(--on-primary);
-    font-size: 28px;
+    font-size: 26px;
 }
 
 .details {
@@ -82,3 +82,7 @@
     align-items: flex-end;
 }
 
+.button {
+    width: 150px;
+    background-color: var(--primary);
+}
