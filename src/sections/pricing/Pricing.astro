@@ -5,8 +5,28 @@ import style from "./style.module.css";
 ---
 
 <section class={`${style.container} section`}>
-    <MediumTitle title="Precios" />
+    <MediumTitle title="Trabajá con nosotros" />
     <div class={`${style.subcontainer} delimiter`}>
+        <div class={style.pricing}>
+            <PricingCard 
+                title="Diseño UX/UI" 
+                description="Materializá tus ideas"
+                price="49.000,00" 
+                features={["Estudio de experiencia de usuario", "Wireframes en baja y alta fidelidad", "Prototipo interactivo"]} 
+            />
+            <PricingCard 
+                title="Desarrollo web" 
+                description="Materializá tus ideas"
+                price="150.000,00" 
+                features={["Diseño UX/UI", "Construcción de sitio web", "Optimización rendimiento", "Optimización SEO", "Hosting y dominio por un año"]} 
+            />
+            <PricingCard 
+                title="Aplicación Android" 
+                description="Materializá tus ideas"
+                price="350.000,00" 
+                features={["Diseño UX/UI", "Desarrollo de aplicación", "Despliegue en Google Play Store", "Requiere testers por parte del cliente"]} 
+            />
+        </div>
         <div class={style.pricing}>
             <PricingCard 
                 title="Identidad visual básico" 
@@ -19,26 +39,6 @@ import style from "./style.module.css";
                 description="Ideal para comenzar tu negocio"
                 price="89.000,00" 
                 features={["Brief", "Logo + versiones", "Paleta de colores", "Tipografía", "Elementos gráficos", "Manual de marca"]} 
-            />
-            <PricingCard 
-                title="Diseño UX/UI" 
-                description="Ideal para comenzar tu negocio"
-                price="49.000,00" 
-                features={["Estudio de experiencia de usuario", "Wireframes en baja y alta fidelidad", "Prototipo interactivo"]} 
-            />
-        </div>
-        <div class={style.pricing}>
-            <PricingCard 
-                title="Desarrollo web" 
-                description="Materializá tus ideas"
-                price="150.000,00" 
-                features={["Diseño UX/UI", "Construcción de sitio web", "Optimización rendimiento", "Optimización SEO", "Hosting y dominio por un año"]} 
-            />
-            <PricingCard 
-                title="Aplicación Android" 
-                description="Materializá tus ideas"
-                price="350.000,00" 
-                features={["Diseño UX/UI", "Desarrollo de aplicación", "Despliegue en Google Play Store", "Requiere testers por parte del cliente"]} 
             />
         </div>
     </div>

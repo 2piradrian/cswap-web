@@ -3,9 +3,10 @@ import style from "./style.module.css";
 
 type Props = {
 	title: string;
+	modifier?: string;
 };
 
-const {title} = Astro.props;
+const {title, modifier = ""} = Astro.props;
 ---
 
-<h1 class={style.title}>{title}</h1>
+<h1 class={`${style.title} ${modifier}`}>{title}</h1>

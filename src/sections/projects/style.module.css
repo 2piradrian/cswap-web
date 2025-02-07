@@ -1,0 +1,18 @@
+.container {
+    padding: 50px 0px;
+    background-color: var(--tertiary);
+}
+
+.title {
+    color: var(--on-tertiary);
+}
+
+.subcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
