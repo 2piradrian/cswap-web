@@ -1,0 +1,39 @@
+---
+import FilledAnchorButton from "../filled-anchor-button/FilledAnchorButton.astro";
+import style from "./style.module.css";
+
+type Props = {
+    title: string,
+    description: string,
+    price: string,
+    features: string[]
+}
+
+const { title, price, description, features } = Astro.props;
+---
+
+<div class={style.container}>
+    <h3 class={style.title}>{title}</h3>
+    <div class={style.details}>
+        <p class={style.description}>{description}</p>
+        <p class={style.description}>A partir de:</p>
+        <div class={style.priceContainer}>
+            <span>AR$</span>
+            <p class={style.price}>{price}</p>
+        </div>
+        <div class={style.divider} />
+        <ul class={style.features}>
+            {features.map((feature) => (
+                <li>{feature}</li>
+            ))}
+        </ul>
+        <div class={style.buttonContainer}>
+            <FilledAnchorButton 
+                name="¡Lo quiero!"
+                href=""
+                ariaLabel="Comprar"
+                modifier={style.button} 
+            />
+        </div>
+    </div>
+</div>
