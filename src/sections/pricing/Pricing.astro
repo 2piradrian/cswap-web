@@ -1,11 +1,17 @@
 ---
 import MediumTitle from "../../components/medium-title/MediumTitle.astro";
+import PricingCard from "../../components/pricing-card/PricingCard.astro";
 import style from "./style.module.css";
 ---
 
 <section class={`${style.container} section`}>
     <MediumTitle title="Precios" />
     <div class={`${style.subcontainer} delimiter`}>
-        
+        <PricingCard 
+            title="Básico" 
+            description="Ideal para comenzar tu negocio"
+            price="59.000,00" 
+            features={["1 usuario", "10 GB de almacenamiento", "Soporte 24/7"]} 
+        />
     </div>
 </section>
