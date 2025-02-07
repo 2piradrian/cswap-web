@@ -1,4 +1,5 @@
 ---
+import FilledAnchorButton from "../filled-anchor-button/FilledAnchorButton.astro";
 import style from "./style.module.css";
 
 type Props = {
@@ -20,11 +21,19 @@ const { title, price, description, features } = Astro.props;
             <span>AR$</span>
             <p class={style.price}>{price}</p>
         </div>
-        <hr class={style.divider} />
+        <div class={style.divider} />
         <ul class={style.features}>
             {features.map((feature) => (
                 <li>{feature}</li>
             ))}
         </ul>
+        <div class={style.buttonContainer}>
+            <FilledAnchorButton 
+                name="¡Lo quiero!"
+                href=""
+                ariaLabel="Comprar"
+                modifier=""  
+            />
+        </div>
     </div>
 </div>
