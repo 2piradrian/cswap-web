@@ -1,0 +1,21 @@
+---
+import Header from '../../components/header/Header.astro';
+import Layout from '../../layouts/Layout.astro';
+import Service from '../../sections/service/Service.astro';
+import Footer from '../../sections/footer/Footer.astro';
+import Projects from '../../sections/projects/Projects.astro';
+import services from "../../data/services.json";
+
+const service = services.find((service: any) => service.name === 'development');
+---
+
+<Layout title='Home'>
+	<Header />
+    <Service 
+        title={service!.title} 
+        subtitle={service!.subtitle} 
+        description={service!.description}  
+    />
+    <Projects />
+    <Footer />
+</Layout>

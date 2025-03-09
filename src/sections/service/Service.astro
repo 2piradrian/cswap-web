@@ -1,0 +1,22 @@
+---
+import BigTitle from "../../components/big-title/BigTitle.astro"
+import FilledAnchorButton from "../../components/filled-anchor-button/FilledAnchorButton.astro"
+import style from "./style.module.css"
+
+type Props = {
+    title: string,
+    subtitle: string,
+    description: string
+}
+
+const { title, subtitle, description }: Props = Astro.props
+---
+
+<section class={`${style.container} section`}>
+    <div class={`${style.subcontainer} delimiter`}>
+        <BigTitle title={title} />
+        <h2 class={style.subtitle}>{subtitle}</h2>
+        <p class={style.description}>{description}</p>
+        <FilledAnchorButton name="Contratar" href="/contacto" ariaLabel="Contacto" modifier={style.button} />
+    </div>
+</section>
