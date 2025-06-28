@@ -1,5 +1,6 @@
 ---
 import MediumTitle from "../../components/medium-title/MediumTitle.astro";
+import SmallTitle from "../../components/small-title/SmallTitle.astro";
 import TextChip from "../../components/text-chip/TextChip.astro";
 import style from "./style.module.css";
 ---
@@ -14,5 +15,10 @@ import style from "./style.module.css";
         <TextChip content="Atención al detalle" />
         <TextChip content="Soporte excepcional" />
         <TextChip content="Transparencia" />
+    </div>
+    <SmallTitle title="Soluciones adaptativas que marcan la diferencia" />
+    <div class={`${style.subcontainer} delimiter`}>
+        <p>Equipo multidisciplinario dedicado a fusionar diseño, tecnología e innovación.</p>
+        <p>Ofrecemos soluciones adaptativas y personalizadas, con foco en el rendimiento, la experiencia de usuario y un soporte transparente y excepcional.</p>
     </div>
 </section>
