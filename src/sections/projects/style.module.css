@@ -15,4 +15,46 @@
     align-items: center;
     gap: 10px;
     padding: 20px;
+<<<<<<< HEAD
 }
+=======
+}
+
+.carouselWrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel {
+  width: 100%;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  gap: 1rem;
+  animation: scroll-infinite 60s linear infinite;
+}
+
+@keyframes scroll-infinite {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.track:hover {
+  animation-play-state: paused;
+  cursor: grab;
+}
+
+
+@media (max-width: 768px) {
+  .track {
+    animation-duration: 20s;
+  }
+}
+>>>>>>> develop

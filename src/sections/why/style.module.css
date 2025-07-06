@@ -10,3 +10,7 @@
     gap: 10px;
     padding: 20px;
 }
+
+.subcontainer > p {
+    font-size: 22px;
+}

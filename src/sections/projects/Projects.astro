@@ -7,6 +7,7 @@ import style from "./style.module.css";
 <section class={`${style.container} section`}>
     <MediumTitle title="Nuestros proyectos" modifier={style.title} />
     <div class={`${style.subcontainer} delimiter`}>
+<<<<<<< HEAD
         <ProjectCard
             image="/images/projects/1.jpg"
             title="Proyecto 1"
@@ -22,5 +23,63 @@ import style from "./style.module.css";
             title="Proyecto 3"
             description="Descripción del proyecto 3"
         />
+=======
+        <div class={style.carouselWrapper} id="carrousel">
+            <div class={style.track}>
+                <!-- Original -->
+                <ProjectCard
+                  image="/images/projects/1.jpg"
+                  title="Web: Siete Colores"
+                  description="Descripción del proyecto 1"
+                />
+                <ProjectCard
+                  image="/images/projects/2.jpg"
+                  title="Sistema: Siete Colores"
+                  description="Descripción del proyecto 2"
+                />
+                <ProjectCard
+                  image="/images/projects/3.jpg"
+                  title="Diseño: Wocks"
+                  description="Descripción del proyecto 3"
+                />
+                <ProjectCard
+                  image="/images/projects/3.jpg"
+                  title="Diseño: Deco Delta"
+                  description="Descripción del proyecto 4"
+                />
+                <ProjectCard
+                  image="/images/projects/3.jpg"
+                  title="App: Auraluna"
+                  description="Descripción del proyecto 5"
+                />
+                <!-- Duplicado (Efecto infinito)-->
+                <ProjectCard
+                  image="/images/projects/1.jpg"
+                  title="Web: Siete Colores"
+                  description="Descripción del proyecto 1"
+                />
+                <ProjectCard
+                  image="/images/projects/2.jpg"
+                  title="Sistema: Siete Colores"
+                  description="Descripción del proyecto 2"
+                />
+                <ProjectCard
+                  image="/images/projects/3.jpg"
+                  title="Diseño: Wocks"
+                  description="Descripción del proyecto 3"
+                />
+                <ProjectCard
+                  image="/images/projects/3.jpg"
+                  title="Diseño: Deco Delta"
+                  description="Descripción del proyecto 4"
+                />
+                <ProjectCard
+                  image="/images/projects/3.jpg"
+                  title="App: Auraluna"
+                  description="Descripción del proyecto 5"
+                />
+            </div>
+        </div>
+>>>>>>> develop
     </div>
 </section>
