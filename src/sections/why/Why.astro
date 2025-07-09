@@ -2,6 +2,7 @@
 import MediumTitle from "../../components/medium-title/MediumTitle.astro";
 import SmallTitle from "../../components/small-title/SmallTitle.astro";
 import TextChip from "../../components/text-chip/TextChip.astro";
+import WhyList from "../../components/why-list/WhyList.astro";
 import style from "./style.module.css";
 ---
 
@@ -18,8 +19,6 @@ import style from "./style.module.css";
     </div>
     <SmallTitle title="Soluciones adaptativas que marcan la diferencia" />
     <div class={`${style.subcontainer} delimiter`}>
-        <p>Somos un equipo especializado en diseño y desarrollo con formación académica sólida y compromiso real con los resultados.</p>
-        <p>En C-Swap, combinamos diseño estratégico con desarrollo avanzado para crear productos digitales que no solo funcionan, sino que generan impacto duradero. Nos diferenciamos por un enfoque profesional respaldado por estudios formales y experiencia concreta: no improvisamos soluciones, las diseñamos con precisión.</p>
-        <p>En un contexto donde abundan soluciones superficiales, nosotros apostamos por la calidad profesional.</p>
+        <WhyList />
     </div>
 </section>
