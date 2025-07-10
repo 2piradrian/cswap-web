@@ -4,16 +4,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const closeIcon = document.getElementById("close-menu");
 
     burgerIcon.addEventListener("click", function () {
-        navBox.dataset.active = "true";
+        navBox.setAttribute("data-active", "true");
     });
 
     closeIcon.addEventListener("click", function () {
-        navBox.dataset.active = "false";
+        navBox.setAttribute("data-active", "false");
     });
 
     navBox.addEventListener("click", function (event) {
-        if (window.innerWidth < 900 && event.target.tagName === "A") {
-            navBox.dataset.active = "false";
+        if (window.innerWidth < 900 && event.target.closest("a")) {
+            navBox.setAttribute("data-active", "false");
         }
     });
+
 });
