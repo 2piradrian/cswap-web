@@ -12,9 +12,12 @@
 	--surface: #FBF8FF;
 	--on-surface: #63607A;
 
+	
 	--background: #FBF8FF;
 	--on-background: #63607A ;
-
+	
+	--decoration: #C3C6F0;
+	
 	--max-width: 1366px;
 	--min-width: 360px;
 }

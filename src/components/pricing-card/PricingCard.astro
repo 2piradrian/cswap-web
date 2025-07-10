@@ -30,7 +30,7 @@ const { title, price, description, features } = Astro.props;
         <div class={style.buttonContainer}>
             <FilledAnchorButton 
                 name="¡Lo quiero!"
-                href=""
+                href=`https://wa.me/+543516135462?text=Hola,%20me%20interesa%20el%20servicio%20de%20${title}`
                 ariaLabel="Comprar"
                 modifier={style.button} 
             />

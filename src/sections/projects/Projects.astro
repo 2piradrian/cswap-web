@@ -4,7 +4,7 @@ import ProjectCard from "../../components/project-card/ProjectCard.astro";
 import style from "./style.module.css";
 ---
 
-<section class={`${style.container} section`}>
+<section class={`${style.container} section`} id="proyectos">
     <MediumTitle title="Nuestros proyectos" modifier={style.title} />
     <div class={`${style.subcontainer} delimiter`}>
         <div class={style.carouselWrapper} id="carrousel">
@@ -13,53 +13,43 @@ import style from "./style.module.css";
                 <ProjectCard
                   image="/assets/projects/sieteColores_web.webp"
                   title="Web: Siete Colores"
-                  description="Descripción del proyecto 1"
+                  description="Catálogo web de productos"
                 />
                 <ProjectCard
                   image="/assets/projects/sieteColores_sistema.webp"
                   title="Sistema: Siete Colores"
-                  description="Descripción del proyecto 2"
+                  description="Sistema de gestión"
                 />
                 <ProjectCard
                   image="/assets/projects/wocks_marca.webp"
                   title="Diseño: Wocks"
-                  description="Descripción del proyecto 3"
+                  description="Identidad visual de marca"
                 />
                 <ProjectCard
-                  image="/images/projects/3.jpg"
-                  title="Diseño: Deco Delta"
-                  description="Descripción del proyecto 4"
-                />
-                <ProjectCard
-                  image="/images/projects/3.jpg"
+                  image="/assets/projects/auraluna_app.webp"
                   title="App: Auraluna"
-                  description="Descripción del proyecto 5"
+                  description="Aplicación móvil de música"
                 />
                 <!-- Duplicado (Efecto infinito)-->
                 <ProjectCard
                   image="/assets/projects/sieteColores_web.webp"
                   title="Web: Siete Colores"
-                  description="Descripción del proyecto 1"
+                  description="Catálogo web de productos"
                 />
                 <ProjectCard
                   image="/assets/projects/sieteColores_sistema.webp"
                   title="Sistema: Siete Colores"
-                  description="Descripción del proyecto 2"
+                  description="Sistema de gestión"
                 />
                 <ProjectCard
                   image="/assets/projects/wocks_marca.webp"
                   title="Diseño: Wocks"
-                  description="Descripción del proyecto 3"
+                  description="Identidad visual de marca"
                 />
                 <ProjectCard
-                  image="/images/projects/3.jpg"
-                  title="Diseño: Deco Delta"
-                  description="Descripción del proyecto 4"
-                />
-                <ProjectCard
-                  image="/images/projects/3.jpg"
+                  image="/assets/projects/auraluna_app.webp"
                   title="App: Auraluna"
-                  description="Descripción del proyecto 5"
+                  description="Aplicación móvil de música"
                 />
             </div>
         </div>
