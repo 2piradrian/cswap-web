@@ -3,26 +3,26 @@ import ServiceCard from '../../components/service-card/ServiceCard.astro';
 import style from './style.module.css';
 ---
 
-<section class={`${style.container} section`}>
+<section class={`${style.container} section`} id="servicios">
     <img class={style.avobeDecoration} src="/assets/other/services_vectorABOVE.svg" alt="decoración" />
     <div class={`${style.subcontainer} delimiter`}>
         <ServiceCard
             title="Diseño gráfico" 
             description="Creá una marca única e impactante." 
             icon="/assets/icons/service-gd.svg" 
-            link="/services/graphic-design" 
+            link="/#precios" 
         />
         <ServiceCard
             title="Diseño UX/UI" 
             description="Mejorá la calidad de tus proyectos." 
             icon="/assets/icons/service-uxui.svg" 
-            link="/services/uxui" 
+            link="/#precios" 
         />
         <ServiceCard
             title="Construcción" 
             description="Desarrollo e implementación de webs y aplicaciones android." 
             icon="/assets/icons/service-dev.svg" 
-            link="/services/development" 
+            link="/#precios" 
         />
     </div>
     <img class={style.belowDecoration} src="/assets/other/services_vectorBELOW.svg" alt="decoración" />
