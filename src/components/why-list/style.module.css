@@ -28,7 +28,7 @@
     display: block;
     width: 1px;
     height: 80%;
-    background-color: var(--primary);
+    background-color: var(--decoration);
     position: absolute;
     right: 0;
     top: 10%;
