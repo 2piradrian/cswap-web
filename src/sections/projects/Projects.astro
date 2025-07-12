@@ -1,57 +1,25 @@
 ---
 import MediumTitle from "../../components/medium-title/MediumTitle.astro";
 import ProjectCard from "../../components/project-card/ProjectCard.astro";
+import projects from "../../data/projects.json";
 import style from "./style.module.css";
+
+const carouselProjects = [...projects, ...projects];
 ---
 
 <section class={`${style.container} section`} id="proyectos">
-    <MediumTitle title="Nuestros proyectos" modifier={style.title} />
-    <div class={`${style.subcontainer} delimiter`}>
-        <div class={style.carouselWrapper} id="carrousel">
-            <div class={style.track}>
-                <!-- Original -->
-                <ProjectCard
-                  image="/assets/projects/sieteColores_web.webp"
-                  title="Web: Siete Colores"
-                  description="Catálogo web de productos"
-                />
-                <ProjectCard
-                  image="/assets/projects/sieteColores_sistema.webp"
-                  title="Sistema: Siete Colores"
-                  description="Sistema de gestión"
-                />
-                <ProjectCard
-                  image="/assets/projects/wocks_marca.webp"
-                  title="Diseño: Wocks"
-                  description="Identidad visual de marca"
-                />
-                <ProjectCard
-                  image="/assets/projects/auraluna_app.webp"
-                  title="App: Auraluna"
-                  description="Aplicación móvil de música"
-                />
-                <!-- Duplicado (Efecto infinito)-->
-                <ProjectCard
-                  image="/assets/projects/sieteColores_web.webp"
-                  title="Web: Siete Colores"
-                  description="Catálogo web de productos"
-                />
-                <ProjectCard
-                  image="/assets/projects/sieteColores_sistema.webp"
-                  title="Sistema: Siete Colores"
-                  description="Sistema de gestión"
-                />
-                <ProjectCard
-                  image="/assets/projects/wocks_marca.webp"
-                  title="Diseño: Wocks"
-                  description="Identidad visual de marca"
-                />
-                <ProjectCard
-                  image="/assets/projects/auraluna_app.webp"
-                  title="App: Auraluna"
-                  description="Aplicación móvil de música"
-                />
-            </div>
-        </div>
+  <MediumTitle title="Nuestros proyectos" modifier={style.title} />
+  <div class={`${style.subcontainer} delimiter`}>
+    <div class={style.carouselWrapper} id="carrousel">
+      <div class={style.track}>
+        {carouselProjects.map((project) => (
+          <ProjectCard
+            image={project.image}
+            title={project.title}
+            description={project.description}
+          />
+        ))}
+      </div>
     </div>
+  </div>
 </section>

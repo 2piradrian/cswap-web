@@ -1,0 +1,27 @@
+[
+  {
+    "image": "/assets/projects/sieteColores_web.webp",
+    "title": "Web: Siete Colores",
+    "description": "Catálogo web de productos"
+  },
+  {
+    "image": "/assets/projects/adesanta_web.webp",
+    "title": "Web: Ayudante de Santa",
+    "description": "Landing page"
+  },
+  {
+    "image": "/assets/projects/sieteColores_sistema.webp",
+    "title": "Sistema: Siete Colores",
+    "description": "Sistema de gestión"
+  },
+  {
+    "image": "/assets/projects/wocks_marca.webp",
+    "title": "Diseño: Wocks",
+    "description": "Identidad visual de marca"
+  },
+  {
+    "image": "/assets/projects/auraluna_app.webp",
+    "title": "App: Auraluna",
+    "description": "Aplicación móvil de música"
+  }
+]
