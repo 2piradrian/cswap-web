@@ -45,7 +45,6 @@
 
 .track:hover {
   animation-play-state: paused;
-  cursor: grab;
 }
 
 
