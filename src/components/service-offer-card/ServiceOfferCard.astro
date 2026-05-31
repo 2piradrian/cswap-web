@@ -5,33 +5,32 @@ import style from "./style.module.css";
 type Props = {
     title: string,
     description: string,
-    price: string,
     features: string[]
 }
 
-const { title, price, description, features } = Astro.props;
+const { title, description, features } = Astro.props;
 ---
 
 <div class={style.container}>
-    <h3 class={style.title}>{title}</h3>
-    <div class={style.details}>
+    <div class={style.header}>
+        <h3 class={style.title}>{title}</h3>
         <p class={style.description}>{description}</p>
-        <p class={style.description}>A partir de:</p>
-        <div class={style.priceContainer}>
-            <span>AR$</span>
-            <p class={style.price}>{price}</p>
-        </div>
+    </div>
+    <div class={style.content}>
         <div class={style.divider} />
         <ul class={style.features}>
             {features.map((feature) => (
-                <li>{feature}</li>
+                <li class={style.featureItem}>
+                    <img src="/assets/icons/arrow.svg" alt="" class={style.checkIcon} />
+                    <span>{feature}</span>
+                </li>
             ))}
         </ul>
         <div class={style.buttonContainer}>
             <FilledAnchorButton 
-                name="¡Lo quiero!"
-                href=`https://wa.me/+543516135462?text=Hola,%20me%20interesa%20el%20servicio%20de%20${title}`
-                ariaLabel="Comprar"
+                name="Consultar ahora"
+                href={`https://wa.me/+543516135462?text=Hola,%20me%20interesa%20el%20servicio%20de%20${title}`}
+                ariaLabel="Consultar presupuesto"
                 modifier={style.button} 
             />
         </div>
