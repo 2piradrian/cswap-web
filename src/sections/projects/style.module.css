@@ -1,20 +1,14 @@
 .container {
-    padding: 50px 0px;
-    background-color: var(--tertiary);
-}
-
-.title {
-    color: var(--on-tertiary);
+    padding: 80px 0px;
+    background-color: var(--decoration);
 }
 
 .subcontainer {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    padding: 20px;
+    width: 100%;
 }
 
 .carouselWrapper {
@@ -30,7 +24,7 @@
 .track {
   display: flex;
   width: max-content;
-  gap: 1rem;
+  gap: 16px;
   animation: scroll-infinite 60s linear infinite;
 }
 
