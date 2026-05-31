@@ -1,24 +1,19 @@
 ---
 import MediumTitle from "../../components/medium-title/MediumTitle.astro";
 import SmallTitle from "../../components/small-title/SmallTitle.astro";
-import TextChip from "../../components/text-chip/TextChip.astro";
 import WhyList from "../../components/why-list/WhyList.astro";
 import style from "./style.module.css";
 ---
 
 <section class={`${style.container} section`} id="nosotros">
-    <MediumTitle title="¿Por qué elegirnos?" />
-    <div class={`${style.subcontainer} delimiter`}>
-        <TextChip content="Adaptativo y accesible" />
-        <TextChip content="Personalización a medida" />
-        <TextChip content="Enfocado en el rendimiento" />
-        <TextChip content="Experiencia de usuario" />
-        <TextChip content="Atención al detalle" />
-        <TextChip content="Soporte excepcional" />
-        <TextChip content="Transparencia" />
-    </div>
-    <SmallTitle title="Soluciones adaptativas que marcan la diferencia" />
-    <div class={`${style.subcontainer} delimiter`}>
-        <WhyList />
-    </div>
+	<div class="delimiter">
+		<div class={style.titleWrapper}>
+			<MediumTitle title="¿Por qué elegirnos?" />
+			<SmallTitle title="Soluciones que marcan la diferencia" />
+		</div>
+
+		<div class={style.gridContainer}>
+			<WhyList />
+		</div>
+	</div>
 </section>
