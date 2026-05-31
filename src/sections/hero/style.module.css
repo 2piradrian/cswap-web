@@ -7,6 +7,30 @@
 
 .subcontainer {
 	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.subcontainer > * {
+	opacity: 0;
+	clip-path: inset(100% 0 0 0);
+	transform: translateY(30px);
+	animation: revealFromBottom 1.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.subcontainer > :nth-child(1) {
+	animation-delay: 0.2s;
+}
+
+.subcontainer > :nth-child(2) {
+	animation-delay: 0.5s;
+}
+
+.subcontainer > :nth-child(3) {
+	animation-delay: 0.8s;
+	animation-name: revealAndScale;
 }
 
 .decoration {
@@ -21,6 +45,7 @@
 	font-weight: 500;
 	font-size: 26px;
 	color: var(--on-background);
+	text-align: center;
 }
 
 .buttons {
@@ -36,6 +61,32 @@
 .buttons > a {
 	width: 100%;
 	max-width: 220px;
+}
+
+@keyframes revealFromBottom {
+	0% {
+		opacity: 0;
+		clip-path: inset(100% 0 0 0);
+		transform: translateY(30px);
+	}
+	100% {
+		opacity: 1;
+		clip-path: inset(0 0 0 0);
+		transform: translateY(0px);
+	}
+}
+
+@keyframes revealAndScale {
+	0% {
+		opacity: 0;
+		clip-path: inset(100% 0 0 0);
+		transform: translateY(30px) scale(0.9);
+	}
+	100% {
+		opacity: 1;
+		clip-path: inset(0 0 0 0);
+		transform: translateY(0px) scale(1);
+	}
 }
 
 @media (min-width: 1500px) {
