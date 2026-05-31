@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cswap.com.ar/sitemap.xml

@@ -3,19 +3,49 @@ import "../styles/global.css";
 
 type Props = {
 	title: string;
+    description?: string;
+    canonicalURL?: string;
 };
 
-const { title } = Astro.props;
+const { 
+    title, 
+    description = "Cswap - Diseño y desarrollo de productos digitales, sitios web, apps mobile y sistemas a medida enfocados en resultados de negocio.",
+    canonicalURL = Astro.url.href
+} = Astro.props;
+
+const socialImageURL = new URL("/assets/brand/isologo.svg", Astro.url);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+        
+        <!-- Primary Meta Tags -->
 		<title>{ title }</title>
+        <meta name="title" content={title} />
+        <meta name="description" content={description} />
+        <link rel="canonical" href={canonicalURL} />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={Astro.url} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={socialImageURL} />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={Astro.url} />
+        <meta property="twitter:title" content={title} />
+        <meta property="twitter:description" content={description} />
+        <meta property="twitter:image" content={socialImageURL} />
+
+        <!-- Robots -->
+        <meta name="robots" content="index, follow" />
 	</head>
 	<body>
 		<slot />

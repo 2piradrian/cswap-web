@@ -6,7 +6,7 @@ const { title, description, icon, link } = Astro.props;
 ---
 
 <div class={style.card}>
-    <img class={style.icon} src={icon} />
+    <img class={style.icon} src={icon} alt={title} />
     <h3 class={style.title}>
         {title}
     </h3>

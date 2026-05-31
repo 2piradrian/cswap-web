@@ -4,25 +4,26 @@ import style from './style.module.css';
 ---
 
 <section class={`${style.container} section`} id="servicios">
+    <h2 class="srOnly">Nuestros Servicios</h2>
     <img class={style.avobeDecoration} src="/assets/other/services_vectorABOVE.svg" alt="decoración" />
     <div class={`${style.subcontainer} delimiter`}>
         <ServiceCard
             title="Diseño gráfico" 
             description="Creá una marca única e impactante." 
             icon="/assets/icons/service-gd.svg" 
-            link="/#precios" 
+            link="/#servicios-detalle" 
         />
         <ServiceCard
             title="Diseño UX/UI" 
             description="Mejorá la calidad de tus proyectos." 
             icon="/assets/icons/service-uxui.svg" 
-            link="/#precios" 
+            link="/#servicios-detalle" 
         />
         <ServiceCard
             title="Construcción" 
             description="Desarrollo de webs, aplicaciones y sistemas sólidos." 
             icon="/assets/icons/service-dev.svg" 
-            link="/#precios" 
+            link="/#servicios-detalle" 
         />
     </div>
     <img class={style.belowDecoration} src="/assets/other/services_vectorBELOW.svg" alt="decoración" />
