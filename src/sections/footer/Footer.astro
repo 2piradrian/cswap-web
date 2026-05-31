@@ -3,16 +3,40 @@ import style from "./style.module.css";
 ---
 
 <footer class={`${style.container} section`}>
-    <div class={`${style.subcontainer} delimiter`}>
-        <div class={style.content}>
-            <h3>Contáctanos</h3>
-            <a href="mailto:dev.cswap@gmail.com" aria-label="enviar correo">dev.cswap@gmail.com</a>
-            <a href="https://wa.me/+543516135462" aria-label="enviar mensaje">+54 351 613-5462</a>
-            <a href="https://www.instagram.com/coo.swap" aria-label="instagram">@coo.swap</a>
+    <div class="delimiter">
+        <div class={style.subcontainer}>
+            <div class={style.brand}>
+                <div class={style.logoWrapper}>
+                    <img src="/assets/brand/isologo.svg" alt="Cswap Logo" class={style.logo} />
+                </div>
+                <p class={style.brandDescription}>
+                    Soluciones digitales de alto impacto. Diseño estratégico y desarrollo profesional enfocado en resultados.
+                </p>
+            </div>
+
+            <div class={style.column}>
+                <span class={style.columnTitle}>Navegación</span>
+                <nav class={style.links}>
+                    <a href="#inicio">Inicio</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#proyectos">Proyectos</a>
+                </nav>
+            </div>
+
+            <div class={style.column}>
+                <span class={style.columnTitle}>Contacto</span>
+                <div class={style.links}>
+                    <a href="mailto:dev.cswap@gmail.com">dev.cswap@gmail.com</a>
+                    <a href="https://wa.me/+543516135462">+54 351 613-5462</a>
+                    <a href="https://www.instagram.com/coo.swap" target="_blank">@coo.swap</a>
+                    <p>Córdoba, Argentina</p>
+                </div>
+            </div>
         </div>
-        <div class={style.content}>
-            <h3>Información</h3>
-            <p>Córdoba, Argentina</p>
+
+        <div class={style.footerBottom}>
+            <span>&copy; {new Date().getFullYear()} Cswap. Todos los derechos reservados.</span>
         </div>
     </div>
 </footer>
