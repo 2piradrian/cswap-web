@@ -1,0 +1,57 @@
+---
+import MediumTitle from "../../components/medium-title/MediumTitle.astro";
+import style from "./style.module.css";
+
+const steps = [
+    {
+        number: "01",
+        title: "Descubrimiento",
+        description: "Analizamos tu modelo de negocio y objetivos para entender el desafío."
+    },
+    {
+        number: "02",
+        title: "Estrategia",
+        description: "Definimos la hoja de ruta técnica y creativa más eficiente."
+    },
+    {
+        number: "03",
+        title: "Feedback & Validación",
+        description: "Revisamos juntos los avances para asegurar que cada detalle cumpla con tus expectativas."
+    },
+    {
+        number: "04",
+        title: "Diseño & UX",
+        description: "Creamos interfaces intuitivas que cautivan a tus usuarios y reflejan tu marca."
+    },
+    {
+        number: "05",
+        title: "Desarrollo",
+        description: "Construimos soluciones sólidas, escalables y de alto rendimiento técnico."
+    },
+    {
+        number: "06",
+        title: "Lanzamiento",
+        description: "Acompañamos la salida a producción y aseguramos el éxito inicial del producto."
+    }
+];
+---
+
+<section class={`${style.container} section`} id="metodologia">
+    <div class="delimiter">
+        <div class={style.header}>
+            <MediumTitle title="Nuestra Metodología" />
+            <p class={style.subtitle}>Un proceso transparente orientado a resultados excepcionales.</p>
+        </div>
+
+        <div class={style.stepsContainer}>
+            {steps.map((step) => (
+                <div class={style.stepCard}>
+                    <span class={style.stepNumber}>{step.number}</span>
+                    <h4 class={style.stepTitle}>{step.title}</h4>
+                    <p class={style.stepDescription}>{step.description}</p>
+                    <div class={style.connector} />
+                </div>
+            ))}
+        </div>
+    </div>
+</section>

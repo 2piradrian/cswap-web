@@ -1,0 +1,23 @@
+---
+import FilledAnchorButton from "../../components/filled-anchor-button/FilledAnchorButton.astro";
+import style from "./style.module.css";
+---
+
+<section class={`${style.container} section`}>
+    <div class="delimiter">
+        <div class={style.card}>
+            <h2 class={style.title}>¿Tenés un proyecto en mente?</h2>
+            <p class={style.description}>
+                Estamos listos para ayudarte a llevar tu idea al siguiente nivel con soluciones digitales a medida.
+            </p>
+            <div class={style.buttonWrapper}>
+                <FilledAnchorButton 
+                    name="Empezar ahora" 
+                    href="https://wa.me/+543516135462" 
+                    ariaLabel="Contactar por WhatsApp"
+                    modifier={style.button}
+                />
+            </div>
+        </div>
+    </div>
+</section>

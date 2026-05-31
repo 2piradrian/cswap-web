@@ -1,0 +1,42 @@
+---
+import MediumTitle from "../../components/medium-title/MediumTitle.astro";
+import style from "./style.module.css";
+
+const faqs = [
+	{
+		question: "¿Cuánto tiempo toma desarrollar un proyecto?",
+		answer: "Los tiempos varían según la complejidad. Una web institucional puede tomar 2-4 semanas, mientras que un sistema a medida o app móvil puede requerir de 2 a 4 meses.",
+	},
+	{
+		question: "¿Qué tecnologías utilizan?",
+		answer: "Trabajamos con tecnologías modernas y escalables, seleccionando siempre la mejor herramienta para cada desafío específico.",
+	},
+	{
+		question: "¿Ofrecen mantenimiento post-lanzamiento?",
+		answer: "Sí, acompañamos a nuestros clientes con planes de soporte y mantenimiento para asegurar que el producto siga evolucionando y funcionando perfectamente.",
+	},
+	{
+		question: "¿Cómo se manejan los pagos?",
+		answer: "Generalmente trabajamos con un anticipo para iniciar el proyecto y pagos por hitos de entrega, asegurando transparencia y compromiso mutuo.",
+	},
+];
+---
+
+<section class={`${style.container} section`} id="faq">
+	<div class="delimiter">
+		<div class={style.header}>
+			<MediumTitle title="Preguntas Frecuentes" />
+		</div>
+
+		<div class={style.faqGrid}>
+			{
+				faqs.map((faq) => (
+					<div class={style.faqItem}>
+						<h4 class={style.question}>{faq.question}</h4>
+						<p class={style.answer}>{faq.answer}</p>
+					</div>
+				))
+			}
+		</div>
+	</div>
+</section>
